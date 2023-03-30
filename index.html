@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title> My Library</title>
+</head>
+<body>
+    <div class="header-container">    
+        <h1>Library</h1>
+        <button id="new-book">+</button>      
+    </div>
+    <div id="book-list"></div>
+    
+    <!-- Add form element with id "new-book-form" -->
+    <div id="new-book-form" class="form-container" style="display: none;">
+        <form>
+            <ul>
+                <li>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required>
+                </li>
+                <li>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" required>
+                </li>
+                <li>
+                    <label for="pages">Pages</label>
+                    <input type="number" id="pages" name="pages" required>
+                </li>
+                <li>
+                    <label for="read">Read?</label>
+                    <select name="read" id="read">
+                        <option value="I read this book!">Read</option>
+                        <option value="I have not read this book!">Have not yet read</option>
+                        <option value="I am currently reading this book!">Currently reading</option>
+                    </select>
+                </li>
+                <li>
+                    <button type="submit"class="form-buttons"  >Save</button>
+                    <button type="button"class="form-buttons" id="cancel">Cancel</button>
+                </li>
+            </ul>
+  </div>
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
